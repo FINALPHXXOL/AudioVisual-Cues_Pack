@@ -15,6 +15,7 @@ You can generate a sound controller via Unity Editor.
 5.	You can assign multiple mixer groups and as many audio sources as you want. The screen can look something like this using the script to that effect.
 
 Definitions:
+
 Object Name (Optional): The name of the gameobject that will be created. If this option is left empty, by default the gameobject’s name will be set to “SoundController” and will appear as such in the Hierarchy.
 
 Main Camera: What the sound controller will use to determine where the image cues will appear on screen when moving around. (note: you will new multiple SoundController gameobjects if you want to use more than one camera)
