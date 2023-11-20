@@ -16,22 +16,41 @@ You can generate a sound controller via Unity Editor.
 
 Definitions:
 Object Name (Optional): The name of the gameobject that will be created. If this option is left empty, by default the gameobject’s name will be set to “SoundController” and will appear as such in the Hierarchy.
+
 Main Camera: What the sound controller will use to determine where the image cues will appear on screen when moving around. (note: you will new multiple SoundController gameobjects if you want to use more than one camera)
+
 Main Canvas: What the sound controller will use to draw images cues on and move them around. (note: you will new multiple SoundController gameobjects if you want to draw on more than one canvas)
+
 Enable Controller: Determines if the script will run. If disabled, images will be cleared from the canvas and will cease running.
+
 Mixer Groups Data: Audio settings that will be associated with a specific mixer group. If an audio source shares the same mixer group as one inside Mixer Groups Data, it will assign those settings to it (unless it’s overridden).
+
 Enable Setting: Determines whether that specific Audio Setting will be represented on the canvas. When disabled, images will be erased from the canvas
+
 Name: The name for the Audio Setting. It doesn’t really affect anything, but is convenient when referencing an Audio Setting inside code. (If left blank, it will use the name of the clip
+
 Audio Source: What all functions will be based from. Sounds that play through the audio source
+
 Mixer Group: Gets assigned automatically from the audio source.
+
 Use Mixer Group Data: Determines whether the audio setting will use values from Mixer Group Data.
+
 Image: The image the sound controller will use to draw on the canvas, representing the audio source.
+
 Offset: Moves the target location to draw image cue from
+
 Min Opacity: The minimum opacity the image will be drawn to. (ranges from 0 to 1)
+
 Max Opacity: The maximum opacity the image will be drawn to. (ranges from 0 to 1)
+
 RMS Multiplier: The sensitivity of the volume detection. Higher the value, the higher the decibel value created.
+
 Max Size: The maximum image size drawn on the canvas.
+
 Min Size: The minimum image size drawn on the canvas.
+
 Calculate Opacity Based On Distance: Changes the opacity to change based on the distance from the audio listener.
+
 Calculate Image Size Based On Volume: Changes the image size to change based on the volume coming from the audio source.
+
 M Overrides: When checked, the value will override the one associated with Mixer Group Data.
